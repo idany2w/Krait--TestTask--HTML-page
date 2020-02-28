@@ -32,6 +32,8 @@ var swiper = new Swiper('.swiper-container', {
 	setTransition: 300,
 	watchOverflow: true,
 	effect: 'coverflow',
+	updateOnWindowResize: true,
+	autoHeight: true,
 	coverflowEffect: {
 		rotate: 0,
 		stretch: 150,
