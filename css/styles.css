@@ -1,0 +1,292 @@
+/*- Bootstap -*/
+	@media (min-width: 1200px){
+		.container, .container-sm, .container-md, .container-lg, .container-xl {
+			max-width: 1170px
+		}
+	}
+
+	h1, .h1 {
+		font-size: 54px;
+		line-height: 60px;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-family: Dosis;
+		font-weight: 600;
+	}
+
+	body, p{
+		font-family: 'Roboto';
+	}
+
+	.btn{
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 30px;
+		padding: 5px 40px;
+	}
+	.btn.btn-light::focus{
+	  opacity: 0.1;
+	  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	.text-dark{
+		color:  #222 !important
+	}
+/*---*/
+
+/*- Header: logo -*/
+	.logo-svg{
+		fill: rgb(255, 255, 255);
+		transition: fill 0.15s ease-in-out;
+	}
+	.scrolled .logo-svg{
+		fill: rgb(243, 31, 121);
+	}
+/*---*/
+
+/*- Header: navbar -*/
+	.navbar{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		transition: background 0.35s ease-in-out
+	}
+	.navbar-nav a.nav-link{
+		color: #ffffff;
+	    font-weight: normal;
+		margin-left: 40px;
+		transition: color 0.15s ease-in-out
+	}
+	.navbar-nav a.btn.nav-link{
+		color: #222222;
+		font-weight: bold;
+		padding: 5px 30px;
+	}
+	a.navbar-brand{
+		font-family: Dosis;
+	    font-weight: bold;
+	}
+	.navbar-toggler{
+	    border: rgb(243, 31, 121) 1px solid;
+	}
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+	}
+	.navbar.scrolled{
+		background: #fff;
+	}
+	.navbar.scrolled .navbar-toggler-icon{
+		background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(243, 31, 121)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+	}
+	.navbar.scrolled .navbar-nav a.nav-link{
+		color: rgb(243, 31, 121);
+	}
+	.navbar.scrolled .navbar-nav a.btn.nav-link{
+		background: rgb(243, 31, 121);
+		color: #fff;
+	}
+/*---*/
+
+/*- Banner -*/
+	.banner{
+		background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+		background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+		background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+		overflow-x: hidden;
+	}
+	.iphones-bg{
+		min-height: 800px
+	}
+	.iphones-bg:before{
+		content: '';
+		position: absolute;
+		right: 0px;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/iphones.png);
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: 800px;
+	}
+/*---*/
+
+/*- Features -*/
+	.features{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.icon-box{
+		margin-top: 30px;
+	}
+	.title-icon-heading{
+		font-size: 24px;
+		color: #222222;
+		font-weight: bold;
+	}
+	.icon{
+		color: #f31f79;
+		font-size: 24px;
+		padding: 22px;
+		margin-right: 20px
+	}
+	.icon.round{
+		border: #eee 1px solid;
+		border-radius: 100px
+	}
+	.icon i{
+		line-height: 30px;
+		width: 30px;
+		text-align: center;
+	}
+	.icon p.title-icon-paragraph{
+		font-weight: 300 
+	}
+/*---*/
+
+/*- Separator -*/
+	.separator hr{
+		border-width: 2px
+	}
+/*---*/
+
+/*- Do not leave -*/
+	.do-not-leave .row{
+		min-height: 690px;
+	}
+	.title .title-text{
+		font-size: 36px;
+		color: #222222
+	}
+	.iphone-bg{
+		min-height: 690px;
+		-ms-flex-align: center !important;
+		align-items: center !important;
+	}
+/*---*/
+
+/* Screen-shots */
+	.screen-shots{
+		width: 100%;
+		overflow: hidden;
+	}
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		padding: 150px 0;
+		overflow: visible;
+	}
+	.swiper-wrapper{
+		align-items: center;
+	}
+	.swiper-slide {
+		width: 360px;
+		height: 500px;
+		text-align: center;
+		font-size: 18px;
+		overflow: hidden;
+		display: flex;
+		align-items: flex-start;
+		box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+	}
+	.swiper-prev,
+	.swiper-next{
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		margin-top: -20px;
+		border-radius: 50%;
+		color: #fff;
+	}
+	.swiper-prev:before,
+	.swiper-next:before{
+		content: '';
+		display: block;
+		width: 115%;
+		height: 115%;
+		z-index: -2;
+		left: -7.5%;
+		top: -7.5%;
+		background: rgb(0, 0, 0);
+		border-radius: 50%;
+		opacity: 0.1;
+		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+		position: absolute;
+	}
+	.swiper-prev::after,
+	.swiper-next::after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		border-radius: 50%;
+		background-image: -moz-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+		background-image: -webkit-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+		background-image: -ms-linear-gradient( 0deg, rgb(253,113,44) 0%, rgb(242,23,128) 100%);
+	}
+	.swiper-prev>svg,
+	.swiper-next>svg{
+		margin: auto;
+	}
+	.swiper-prev{
+		left: 0;
+	}
+	.swiper-next{
+		right: 0;
+	}
+/*---*/
+
+/*- Media -*/
+	@media (min-width: 1300px) {
+		/* Screen-shots */
+			.swiper-prev{
+				left: -45px;
+			}
+			.swiper-next{
+				right: -45px;
+			}
+		/*---*/
+	}
+	@media (max-width: 991.98px) {
+		/*- Navbar -*/
+			.navbar-nav a.nav-link{
+				margin-left: 0px
+			}
+		/*---*/
+		/*- Banner */
+			.banner{
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+			.banner .row{
+				min-height: initial;
+			}
+			.banner .row:before{
+				display: none;
+			}
+			.list li{
+				display: flex;
+				align-items: center;
+			}
+		/*---*/
+		/*- Do not leave -*/
+			.iphone-bg{
+				min-height: initial;
+			}
+		/*---*/
+		/* Screen-shots */
+			.swiper-prev,
+			.swiper-next{
+				display: none;
+			}
+		/*---*/
+	}
+/*---*/
